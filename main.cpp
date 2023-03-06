@@ -8,5 +8,5 @@ int main(){
     Referee* referee = new Referee();
     Player * winning_player;
     winning_player = referee ->refGame(human_player, computer_player);
-    
+    cout << winning_player->Name << endl;
 }

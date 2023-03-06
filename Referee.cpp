@@ -6,9 +6,11 @@ Referee::Referee(){
 }
 
 Player* Referee::refGame(Player* player1, Player* player2){
-    if (player1->makeMove() == player2->makeMove()){
+    char p1move = player1->makeMove();
+    char p2move = player2->makeMove();
+    if (p1move == p2move){
         return nullptr;
-    } else if ((player1->makeMove() == 'R' && player2->makeMove() == 'S') || (player1->makeMove() == 'S' && player2->makeMove() == 'P') || (player1->makeMove() == 'P' && player2->makeMove() == 'R')){
+    } else if ((p1move == 'R' && p2move) || (p1move == 'S' && p2move == 'P') || (p1move == 'P' && p2move == 'R')){
         return player1;
     } else {
         return player2;
