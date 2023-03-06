@@ -1,16 +1,17 @@
-#ifndef HUMAN_H
-#define HUMAN_H
+#ifndef COMPUTER_H
+#define COMPUTER_H
 
 #include "Player.h"
 
 using namespace std;
 
-class Human : public Player{
+class Computer : public Player{
     public:
-        Human();
-    
+        Computer();
+        
         char makeMove();
         string getName();
+        
 };
 
 #endif
