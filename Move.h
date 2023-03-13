@@ -11,8 +11,6 @@ public:
     Move();
     string getName();
     void setName(string name);
-
-protected:
     string moveName;
 };
 
