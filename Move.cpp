@@ -1,14 +1,13 @@
-#include"Move.h"
+#include "Move.h"
 
 Move::Move(){
     moveName = "";
 }
 
-string Move::getName(){
+string Move:: getName(){
     return moveName;
 }
 
-
-
-
-
+void Move:: setName(string name){
+    moveName = name;
+}

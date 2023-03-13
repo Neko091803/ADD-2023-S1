@@ -1,15 +1,18 @@
-#include "Player.h"
 #ifndef HUMAN_H
 #define HUMAN_H
 
-class Human{
-    public:
-        Human();
-        Move* makeMove();
-        string getName();
-        
+#include "Player.h"
+
+using namespace std;
+
+class Human : public Player {
+ public:
+ Human();
+  Human(string name);
+  Move* makeMove();
+  string getName();
+  private:
+   string hname;
 };
-
-
 
 #endif

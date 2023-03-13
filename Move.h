@@ -3,21 +3,17 @@
 
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-class Move {
-    public:
+class Move
+{
+public:
     Move();
     string getName();
-    void setName();
+    void setName(string name);
 
-    protected:
-        string moveName;
-
+protected:
+    string moveName;
 };
-
-S
-
 
 #endif

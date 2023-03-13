@@ -1,12 +1,16 @@
 #include "Computer.h"
 
-Computer::Computer(){
-    Name = Computer;
-    move = Ninja;
-    return;
+using namespace std;
+
+Computer::Computer() { cname = "Computer"; }
+
+Computer::Computer(string name) { cname = name; }
+
+Move *Computer::makeMove()
+{
+  Move *move = new Move();
+  move->setName("Rock");
+  return move;
 }
 
-string Computer::getName(){
-    return Name;
-}
-
+string Computer::getName() { return cname; }
