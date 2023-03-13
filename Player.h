@@ -8,10 +8,11 @@ using namespace std;
 
 class Player{
     public:
-    Player();
-         string Name;
-        virtual char makeMove() = 0;
-        virtual string getName() = 0;
+       Player();
+       virtual string getMove()=0;
+       virtual Move * makeMove()=0;
+
+
 };
 
 #endif

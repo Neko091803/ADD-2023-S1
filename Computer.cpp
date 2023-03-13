@@ -1,14 +1,9 @@
 #include "Computer.h"
 
-using namespace std;
-
 Computer::Computer(){
-    Name="Computer";
-}
-
-char Computer::makeMove(){
-    char move = 'R';
-    return move;
+    Name = Computer;
+    move = Ninja;
+    return;
 }
 
 string Computer::getName(){
