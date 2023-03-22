@@ -1,29 +1,34 @@
 #include "Reverser.h"
 #include <math.h>
+#include <iostream>
 
-int Reverser::reverseDigit(int num)
+int Reverser::reverseDigit(int value)
 {
-   //使用递归
-    if (num < 10)
-    {
-         return num;
+    if(value / 10 == 0){
+        return value;
     }
-    else
-    {
-         return (num % 10) * pow(10, (int)log10(num)) + reverseDigit(num / 10);
-    }
+    //确认数字
+   int num = value-((value/10)*10);
+   //确认位置
+   int power = 0;
+while(value/ pow(10,power)>=1){
+    power ++;
+}
+power--;
+
+   //放在对应的位置
+   int sum = num*pow(10,power);
+   //下一个
+   return sum + reverseDigit(value/10);
 
 }
 
-string Reverser::reverseString(string str)
-{
-    //使用递归
-    if (str.length() == 1)
-    {
+string Reverser::reverseString(string str){
+    if (str.length() <= 1){
         return str;
     }
-    else
-    {
-        return str.substr(str.length() - 1, 1) + reverseString(str.substr(0, str.length() - 1));
-    }
+    char last = str.back();
+    str.pop_back();
+    return last + reverseString(str);
+
 }
