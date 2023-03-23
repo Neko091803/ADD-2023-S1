@@ -6,4 +6,6 @@ using namespace std;
 class r2{
     public:
     void stars(int n);
-}
+};
+
+#endif
