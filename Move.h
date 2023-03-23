@@ -1,17 +1,19 @@
 #ifndef MOVE_H
 #define MOVE_H
+#include<iostream>
 
-#include <iostream>
-#include <string>
 using namespace std;
 
-class Move
-{
-public:
+class Move{
+    public:
     Move();
     string getName();
-    void setName(string name);
+    void setName(string Name);
+    
+    protected:
     string moveName;
+   
+
 };
 
 #endif

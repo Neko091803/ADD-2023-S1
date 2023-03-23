@@ -1,20 +1,18 @@
 #include "Human.h"
 
-using namespace std;
-
-Human ::Human() { hname = "Human"; }
-
-Human::Human(string name) { hname = name; }
+Human::Human(){
+  hname = "Jason";
+}
 
 Move *Human::makeMove()
 {
-  string tempName;
-  Move *move = new Move();
-  cin>>tempName;
-  move->setName(tempName);
-  return move;
+  Move *hmove = new Move();
+  string HuMove;
+  cout << "Enter your move" << endl;
+  cin >> HuMove;
+  hmove->setName(HuMove);
 }
-
-string Human::getName() { return hname; }
-
-// alg
+string Human::getName()
+{
+  return hname;
+}

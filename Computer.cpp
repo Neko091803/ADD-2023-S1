@@ -1,16 +1,16 @@
-#include "Computer.h"
+  #include"Computer.h"
 
-using namespace std;
-
-Computer::Computer() { cname = "Computer"; }
-
-Computer::Computer(string name) { cname = name; }
-
-Move *Computer::makeMove()
-{
-  Move *move = new Move();
-  move->setName("Rock");
-  return move;
+  
+  Computer::Computer(){
+    cname = "Computer";
+  }
+  Move *Computer::makeMove( ){
+    Move * cMove = new Move();
+    string CoMove = "Rock";
+    cMove->setName(CoMove);
+     
 }
 
-string Computer::getName() { return cname; }
+   string Computer::getName(){
+      return cname;
+   }
