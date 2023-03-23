@@ -3,10 +3,12 @@
 #include <iostream>
 using namespace std;
 class Bag{
+    private:
+    static vetor<int>(item);
+
     public:
     void addItem(int item);
     int removeItem();
-    private:
-    vetor<int>(item);
+    
 
 }
